@@ -1,0 +1,289 @@
+.CaptchaBlock
+{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.CaptchaBlock .Captcha:after
+{
+	display: block;
+	clear: both;
+	content: ""
+}
+.CaptchaBlock .Captcha
+{
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+.CaptchaBlock .Captcha img
+{
+	clear: both;
+	vertical-align: bottom;
+}
+.CaptchaBlock .Captcha a
+{
+	color: #009edd;
+	text-decoration: none;
+	border-bottom: dashed 1px #009edd;
+}
+.CaptchaBlock .Captcha a:hover
+{
+	color: #df1e2c;
+	border-bottom: dashed 1px #df1e2c;
+}
+.CaptchaBlock .CaptchaInput
+{
+	width: 40px;
+	float: left;
+	display: inline-block;
+	position: relative;
+	padding: 0.9em 0 0 0;
+	left: 3%;
+}
+.CaptchaBlock .CaptchaInput input 
+{
+	height: 1.4em !important;
+	text-align: center;
+}
+
+.HideBlock
+{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	min-width: 985px;
+	background: url(../Images/TransparentBg.png);
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+}
+
+.PopupWindow
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: table;
+	z-index: 2000;
+	left: 0;
+	top: 0;
+}
+
+.PopupWindowInner
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+.PopupWindowTR
+{
+	width: 100%;
+	position: relative;
+	//top: 50%;
+	
+}
+.PopupWindowClose
+{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 5%;
+	font-size: 0.8em;
+	font-style: italic;
+	border-bottom: dashed 1px #555;
+	color: #555;
+	cursor: pointer;
+}
+.PopupWindowClose:hover
+{
+	border-bottom: dashed 1px #da2438 !important;
+	color: #da2438 !important;
+}
+.Popup
+{
+	width: 650px;
+	margin: 0 auto;
+	/*background: #fff;*/
+	/*border: solid 1px #ccc;*/
+	position: relative;
+	/*padding: 20px 20px 20px 20px;*/
+	//top: -50%;
+}
+.PopupContent
+{
+	padding: 35px 10px 20px 10px;
+}
+.Popup h1
+{
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 0 0.5em 0;
+}
+.PopupImage
+{
+	text-align: center;
+}
+.Popup ul
+{
+	list-style-type: none;
+}
+.Popup ul li
+{
+	padding: 0 0 0.8em 0;
+}
+.Popup p
+{
+	padding: 0 0 0.5em 0;
+}
+.Popup .FormList
+{
+	width: 100% !important;
+}
+.PopupButtons
+{
+	padding: 1em 0 0 0;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+
+.Pager
+{
+	width: 100%;
+	margin: 20px 0;
+	font-style: italic;
+}
+.Pager a
+{
+	color: #000;
+}
+.Pager a:hover
+{
+	color: #da2438;
+}
+.Pager .PagerTitle
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #777;
+	margin: 0 1em 0 0;
+}
+.Pager .PagerControl
+{
+	font-size: 1.1em;
+	position: relative;
+	top: -0.15em;
+	color: #ccc;
+}
+.PagerControlMargin
+{
+	width: 1em;
+	display: inline-block;
+}
+.Pager .PagerControl .PagerArrow
+{
+	font-size: 1.4em;
+	text-decoration: none;
+	position: relative;
+	top: 0.1em;
+	color: #999;
+}
+.Pager .PageNumber
+{
+	display: inline-block;
+	margin: 0.3em 0.1em 0 0;
+}
+.Pager .PageNumber a
+{
+	display: inline-block;
+	padding: 0.3em 0.5em;
+	font-size: 1.1em;
+	color: #000;
+}
+.Pager .PageNumber a:hover
+{
+	background: #F2F2F2;
+	color: #da2438;
+}
+.Pager .PageNumber a.Active
+{
+	background: #c08637;
+	text-decoration: none;
+	color: #fff;
+}
+.Pager .PageNumber a.Active:hover
+{
+	background: #F2F2F2;
+	color: #333;
+}
+.Pager .PagerFirstPage
+{
+	padding: 0 1em 0 0;
+	font-size: 0.8em;
+}
+.Pager .PagerLastPage
+{
+	padding: 0 0 0 0;
+	font-size: 0.8em;
+}
+
+.d-shadow
+{
+	position: relative;
+	margin: 0 24px;
+	padding: 0 0 24px 0;
+}
+.d-shadow-wrap
+{
+	width: 100%;
+	position: relative;
+	padding: 0 24px;
+	margin: 0 -24px;
+	overflow: hidden;
+}
+.d-sh-cn
+{
+	position: absolute;
+	left: -24px;
+	z-index: -1;
+	background: url(../Images/BackGrounds/Popup.png);
+}
+.d-sh-tl,
+.d-sh-tr
+{
+	height: 1500px;
+	top: -24px;
+}
+.d-sh-tl,
+.d-sh-bl
+{
+	width:100%;
+}
+.d-sh-tr,
+.d-sh-br
+{
+	width: 24px;
+	margin-left: 100%;
+}
+.d-sh-bl,
+.d-sh-br
+{
+	height: 24px;
+}
+
+.d-sh-bl
+{
+	left: -48px;
+	padding-right: 48px;
+	clip: rect(auto auto auto 24px);
+}
+.d-sh-br
+{
+	left: 0px;
+	//left: -48px;
+}

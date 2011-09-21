@@ -1,0 +1,31 @@
+.LeftMargin
+{
+	width: 50%;
+	float: left;
+	height: 10px;
+	display: block;
+	position: relative;
+	margin-right: -600px;
+	line-height: 0;
+}
+.RightMargin
+{
+	width: 50%;
+	float: right;
+	height: 10px;
+	display: block;
+	position: relative;
+	margin-left: -600px;
+	line-height: 0;
+}
+.MaxWidth
+{
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+	float: left;
+}
+.MinWidth
+{
+	width: expression(( document.documentElement.clientWidth || document.body.clientWidth) < 905 ? "905px" : "auto" );
+}
