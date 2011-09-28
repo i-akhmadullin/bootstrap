@@ -1,7 +1,7 @@
 BOILERPLATE ITCASE
 =================
 
-Boilerplate Itcase - это набор заготовок для ускоренного создания сайтов, в том числе:
+Boilerplate - это набор заготовок для ускоренного создания сайтов, в том числе:
 
 * Заготовка страницы XHTML1.1, возможно HTML5
 * Заготовка для написания плагина jQuery с нуля
@@ -27,23 +27,6 @@ Or if you prefer, the standard css way:
 <link rel="stylesheet" type="text/css" href="csskit.css">
 ```
 
-
-Versioning
-----------
-
-Releases will be numbered with the follow format:
-
-`<major>.<minor>.<patch>`
-
-And constructed with the following guidelines:
-
-* Breaking backwards compatibility bumps the major
-* New additions without breaking backwards compatibility bumps the minor
-* Bug fixes and misc changes bump the patch
-
-For more information on SemVer, please visit http://semver.org/.
-
-
 Баг-трекер
 -----------
 
@@ -51,14 +34,6 @@ For more information on SemVer, please visit http://semver.org/.
 
 https://github.com/i-akhmadullin/boilerplate-itcase/issues
 
-Авторы
--------
-
-**Ilya Akhmadullin**
-
-+ http://github.com/i-akhmadullin/
-
-**  ** 
 
 Copyright and license
 ---------------------
