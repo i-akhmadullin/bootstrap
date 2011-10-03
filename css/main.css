@@ -52,9 +52,10 @@ a:hover
 	min-width: 985px;
 	margin: 0 auto;
 	position: relative;
-	z-index: 100;
+	outline: 1px solid red;
 }
-/* Для justify-ins которым выравниваются блоки по ширине контейнера */
+
+/* Для justify ins которым выравниваются блоки по ширине контейнера */
 .HelperIns
 {
 	width: 100%;
@@ -69,24 +70,31 @@ a:hover
 {
 	width: 100%;
 	margin: 0 auto;
-	height: 50px;
-	border-bottom: 1px solid #4A71C4;
+	outline: 1px solid grey;
+	overflow: hidden;
+	padding: 20px 0 0 0;
 }
 .Logo
 {
-	
+	float: left;
 }
 .Menu
 {
 	
 }
-
+.Menu li
+{
+	display: inline;
+}
 /*----------------------------------- Content --------------------------------*/
 .Wrapper
 {
 	margin: 20px 35px 0px 50px;
 	font-size: 0.8em;
 	border-top: 1px solid #FFFFFF;
+	min-height: 360px;
+	background: #ddd;
+	border: 1px solid grey;
 }
 .Wrapper h1
 {
@@ -115,7 +123,6 @@ a:hover
 }
 .Content
 {
-	
 }
 .Content ul,
 .Content ol
@@ -150,11 +157,11 @@ a:hover
 /*------------------------------------ Footer --------------------------------*/
 .Footer
 {
-	width: 92%;
 	margin: 0 auto;
 	color: #444;
 	clear: both;
 	font-size: 0.8em;
+	outline: 1px solid grey;
 }
 .Footer .Copyright
 {

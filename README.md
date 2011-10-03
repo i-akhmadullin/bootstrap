@@ -1,12 +1,18 @@
-BOILERPLATE ITCASE
+BOOTSTRAP
 =================
 
-Boilerplate - это набор заготовок для ускоренного создания сайтов, в том числе:
+Bootstrap - заготовки для ускоренного создания сайтов, в том числе:
 
-* Заготовка страницы XHTML1.1, возможно HTML5
-* Заготовка для написания плагина jQuery с нуля
-* CSS cтили(csskit.css) для форм, автоматически сгенерированных Django
-* Стили и яваскрипт для всплывающего попапа
+* Заготовка страницы HTML5 (нет смысла использовать xHTML, ie6-8 все равно отображают в Standarts Mode)
+* Заготовка для написания плагина jQuery с нуля - plugin-template.js
+* CSS cтили(csskit.css) для стилизации форм, сгенерированных Django: 
+``` html
+<form action="." method="post">{% csrf_token %}
+{{ form.as_eul }}
+<input type="submit" value="Отправить" />
+</form>
+```
+* Файл стилей и скрипт для всплывающего попапа
 * Стили для пагинатора, breadcrumb(хлебных крошек)
 * Ротатор, ротатор-лайт(для мобильных устройств)
 * Заготовка сайта на Django с настроенным скриптом html5boilerplate
@@ -32,7 +38,7 @@ Or if you prefer, the standard css way:
 
 Нашли баг? Добавьте его описание в разделе issues:
 
-https://github.com/i-akhmadullin/boilerplate-itcase/issues
+https://github.com/i-akhmadullin/bootstrap/issues
 
 
 Copyright and license

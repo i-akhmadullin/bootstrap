@@ -42,7 +42,7 @@ $.ajaxSetup({
 	}
 });
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$("#RotatorWraper").rotator({
 		'items': '.RotatorItem',
 		'prev': '#LeftRotatorArrow',
@@ -50,7 +50,7 @@ $(document).ready(function() {
 		'visibleCount': 1,
 		'changeCount' : 1,
 		'useSwipeTouch' : true,
-		/*'useHashUrl' : true,*/
+		//'useHashUrl' : true,
 		'hashPrefix' : "slider"
 	});  
-});
+});*/
