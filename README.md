@@ -3,7 +3,7 @@ BOOTSTRAP
 
 Bootstrap - заготовки для ускоренного создания сайтов, в том числе:
 
-* Заготовка страницы HTML5 (нет смысла использовать xHTML, ie6-8 все равно отображают в Standarts Mode)
+* Заготовка страницы HTML5 (ie6-8 отображают в Standarts Mode)
 * Заготовка для написания плагина jQuery с нуля - plugin-template.js
 * CSS cтили(csskit.css) для стилизации форм, сгенерированных Django:
 
@@ -23,16 +23,20 @@ Bootstrap - заготовки для ускоренного создания с
 Как использовать
 -----
 
-TODO
+Подключение попапа:
 
 ``` html
-<script src="common.js" type="text/javascript"></script>
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popupwindow.js"></script>
 ```
 
-Or if you prefer, the standard css way:
+Подключение ротатора:
 
 ``` html
-<link rel="stylesheet" type="text/css" href="csskit.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotator.js"></script>
+<link rel="stylesheet" type="text/css" href=".css"> <!--пока нет-->
 ```
 
 Баг-трекер
