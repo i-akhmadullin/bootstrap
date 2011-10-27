@@ -30,14 +30,6 @@ Bootstrap - заготовки для ускоренного создания с
 <script type="text/javascript" src="js/popupwindow.js"></script>
 ```
 
-Подключение ротатора:
-
-``` html
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.rotator.js"></script>
-<link rel="stylesheet" type="text/css" href=".css"> <!--пока нет-->
-```
-
 Баг-трекер
 -----------
 
