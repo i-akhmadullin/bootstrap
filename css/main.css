@@ -89,12 +89,13 @@ a:hover
 /*----------------------------------- Content --------------------------------*/
 .Wrapper
 {
-	margin: 20px 35px 0px 50px;
+	padding: 20px 35px 0px 50px;
+	margin: 0 auto;
+	min-height: 360px;
 	font-size: 0.8em;
 	border-top: 1px solid #FFFFFF;
-	min-height: 360px;
-	background: #ddd;
 	border: 1px solid grey;
+	background: #ddd;
 }
 .Wrapper h1
 {
