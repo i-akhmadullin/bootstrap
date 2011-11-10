@@ -50,6 +50,7 @@
 	width: 100%;
 	position: relative;
 	//top: -50%;
+	text-align: center;
 }
 .PopupWindowClose
 {
@@ -69,12 +70,13 @@
 }
 .Popup
 {
-	width: 500px;
+	/*width: 500px;*/
 	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
 	background: #fff;
 	border: solid 1px #ccc;
-	position: relative;
-	padding: 20px;
 }
 .Popup h1
 {
@@ -87,3 +89,8 @@
 {
 	font-size: 0.8em;
 }
+/*.PopupContent img
+{
+	max-width: 100%;
+	height: auto;
+}*/

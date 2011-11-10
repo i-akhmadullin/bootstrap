@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Itcase</title>
+	<title>Шаблон</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="robots" content="none"/>
 	<meta http-equiv="expires" content="0"/>
@@ -10,10 +10,13 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css"/>
 	<link href="css/csskit.css" rel="stylesheet" type="text/css"/>
 	<link href="css/popup.css" rel="stylesheet" type="text/css"/>
+	<link href="css/rotator.css" rel="stylesheet" type="text/css"/>
 	<!--[if lte IE 6]>
 		<link href="css/ie6.css" rel="stylesheet" type="text/css" />
 	<![endif]-->
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.rotator.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/popupwindow.js"></script>
 </head>
@@ -23,37 +26,43 @@
 
 	<div class="MaxWidth">
 		<div class="MinWidth">
-			<div class="Header">
-				<div class="Logo">
-					<a href="#"><img src="img/logo.png" alt="Логотип"/></a>
-				</div>
-				<div class="Menu">
-					<ul>
-						<li>
-							<a href="#">Меню</a>
-						</li>
-						<li>
-							<a href="#">Меню</a>
-						</li>
-						<li>
-							<a href="#">О сайте</a>
-						</li>
+			<div class="Wrapper">
+				<div class="Header">
+					Шапка
+					<div class="Logo"><a href="#"><img src="img/logo.png" alt="Логотип"/></a></div>
+					<ul class="Menu">
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">О сайте</a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="Wrapper">
 				<div class="Content">
 					Контент
-					
+					<div class="RotatorWrapper">
+						<a href="#" id="RotatorPrevLink" class="RotatorPrevLink"><span>&nbsp;</span></a>
+						<a href="#" id="RotatorNextLink" class="RotatorNextLink"><span>&nbsp;</span></a>
+						<div class="Rotator" id="Rotator">
+							<div class="RotatorItem">
+								<a href="#"><img src="http://farm7.static.flickr.com/6019/6312715714_3fa86a316f_b.jpg" alt=""/></a>
+							</div>
+							<div class="RotatorItem">
+								<a href="#"><img src="http://farm7.static.flickr.com/6215/6317900776_7bcfee5a03_b.jpg" alt=""/></a>
+							</div>
+							<div class="RotatorItem">
+								<a href="#"><img src="http://farm7.static.flickr.com/6041/6328670411_51a10483b2_b.jpg" alt=""/></a>
+							</div>
+							<div class="RotatorItem">
+								<a href="#"><img src="http://farm7.static.flickr.com/6033/6325301683_293882cd6f_b.jpg" alt=""/></a>
+							</div>
+						</div>
+					</div>
 					<a href="#" class="ShowPopup">Показать попап</a>
 				</div>
-			</div>
-			<div class="Footer">
-				<p class="Copyright">© 1999—2011 «Сайт»</p>
-				<address>
-					<p>ул. Василия Пупкина 67, офис 123</p>
-					<p>Контактные телефоны: (343) 000-00-00</p>
-				</address>
+				<div class="Footer">
+					<p class="Copyright">© 1999—2011 «Сайт»</p>
+					<address>ул. Василия Пупкина 67, офис 123</address>
+					<address>Контактные телефоны: (343) 000-00-00</address>
+				</div>
 			</div>
 		</div>
 	</div>

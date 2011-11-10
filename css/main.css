@@ -17,7 +17,6 @@ body
 	height: auto !important;
 	height: 100%;
 	min-height: 100%;
-	background: #fff;
 	font-size: 100.01%;
 	font-family: Arial;
 	position: relative;
@@ -95,7 +94,7 @@ a:hover
 	font-size: 0.8em;
 	border-top: 1px solid #FFFFFF;
 	border: 1px solid grey;
-	background: #ddd;
+	/*background: #ddd;*/
 }
 .Wrapper h1
 {
@@ -124,6 +123,7 @@ a:hover
 }
 .Content
 {
+
 }
 .Content ul,
 .Content ol

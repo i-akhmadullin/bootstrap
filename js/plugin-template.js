@@ -1,13 +1,4 @@
 ﻿;(function($) {
-	$.plugin.defaults = {
-		// Appearance
-		width               : null,      // Override the default CSS width
-		height              : null,      // Override the default CSS height
-
-		// Navigation
-		buildNavigation     : true      // If true, builds a list of anchor links to link to each panel
-	};
-	
 	$.plugin = function(el, options) {
 
 		// To avoid scope issues, use 'base' instead of 'this'
@@ -34,7 +25,14 @@
 		// Trigger the initialization
 		base.init();
 	};
+	$.plugin.defaults = {
+		// Appearance
+		width               : null,      // Override the default CSS width
+		height              : null,      // Override the default CSS height
 
+		// Navigation
+		buildNavigation     : true      // If true, builds a list of anchor links to link to each panel
+	};
 	$.fn.plugin = function(options) {
 
 		// initialize the slider

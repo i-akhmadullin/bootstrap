@@ -1,3 +1,71 @@
+.RoundedCorners
+{
+	width: auto;
+	display: inline-block;
+	//display: inline;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	zoom: 1;
+}
+
+.RoundedCorners .cn
+{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: -15px;
+	top: -15px;
+	background: url(../img/menu.png) no-repeat;
+}
+
+.RoundedCorners .cn.tr,
+.RoundedCorners .cn.br
+{
+	margin-left: 100%;
+}
+.RoundedCorners .cn.tl,
+.RoundedCorners .cn.bl
+{
+	width: 100% !important;
+}
+.RoundedCorners .cn.bl,
+.RoundedCorners .cn.br
+{
+	top: 15px !important;
+}
+.RoundedCorners .cn.tr
+{
+	clip: rect(15px 15px 30px 0) !important;
+}
+.RoundedCorners .cn.br
+{
+	clip: rect(0 15px 15px 0) !important;
+}
+.RoundedCorners .cn.tl
+{
+	clip: rect(15px auto 30px 15px) !important;
+}
+.RoundedCorners .cn.bl
+{
+	clip: rect(0 auto 15px 15px) !important;
+}
+.RoundedCorners a
+{
+	padding: 0px 6px;
+	position: relative;
+	top: -2px;
+	left: 0;
+	z-index: 100;
+	cursor: pointer;
+}
+.RoundedCorners .cn
+{
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+
 .FormField.Radio ul:after
 {
 	display: block;

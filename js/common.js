@@ -42,15 +42,16 @@ $.ajaxSetup({
 	}
 });
 
-/*$(document).ready(function() {
-	$("#RotatorWraper").rotator({
+$(document).ready(function() {
+	$("#Rotator").rotator({
 		'items': '.RotatorItem',
-		'prev': '#LeftRotatorArrow',
-		'next': '#RightRotatorArrow',
+		'prev': '#RotatorPrevLink',
+		'next': '#RotatorNextLink',
 		'visibleCount': 1,
-		'changeCount' : 1,
-		'useSwipeTouch' : true,
-		//'useHashUrl' : true,
-		'hashPrefix' : "slider"
-	});  
-});*/
+		'changeCount': 1,
+		//'hashPrefix': "slide",
+		//'autoPlay': true,
+		//'easing': "easeOutQuad",
+		'keyboardNavigation': true
+	});
+});

@@ -13,14 +13,15 @@ function ShowPopup(url) {
 		return false;
 	}
 	$overlay.show();
-	$(document).keyup(function(e) { //test this
+	$popupcontent.append($("<img />").attr("src","http://farm7.static.flickr.com/6099/6331816847_e237d52028.jpg"));
+	$(document).keyup(function(e) {
 		if (e.keyCode == 27) { ClosePopup(); } // close popup on esc
 	});
 	$("html").click(function(e) {
 		ClosePopup();
 	});
 	$('.Popup').click(function(event) {
-		event.stopPropagation();
+		return false;
 	});
 	/*$.ajax({
 		url: url,
@@ -78,13 +79,14 @@ function SubmitForm(){
 	return false;
 }
 
-var $overlay, $popupwindow;
+var $overlay,
+	$popupwindow,
+	$popupcontent;
 
 $(function () {
 	$('.RightMargin').after(
 		$overlay	= $('<div class="HideBlock" id="HideBlock" style="display: none;">&nbsp;</div>'),
 		$popupwindow = $('<div class="PopupWindow" id="PopupWindow" style="display: none;"></div>')
-		/*loading	= $('<div></div>'),*/
 	);
 	$popupwindow.append(
 		'<div class="PopupWindowInner">' +
@@ -106,6 +108,7 @@ $(function () {
 				'</div>' +
 			'</div>' +
 		'</div>');
+	$popupcontent = $("#PopupContent");
 	$("#PopupWindowClose").click(ClosePopup);
 	$(".ShowPopup").live('click', ShowPopup);
 });
