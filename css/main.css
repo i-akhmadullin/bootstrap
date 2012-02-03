@@ -26,7 +26,7 @@ body
 }
 input[type="button"] {  width: auto; overflow: visible; }
 button, input, select, textarea { margin: 0; }
-img { vertical-align: bottom; }
+img { vertical-align: middle; }
 
 .LeftMargin, .RightMargin
 {
@@ -54,7 +54,7 @@ a:hover
 	outline: 1px solid red;
 }
 
-/* Для justify ins которым выравниваются блоки по ширине контейнера */
+/* Для выравнивания блоков по ширине контейнера */
 .HelperIns
 {
 	width: 100%;
@@ -71,7 +71,6 @@ a:hover
 	margin: 0 auto;
 	outline: 1px solid grey;
 	overflow: hidden;
-	padding: 20px 0 0 0;
 }
 .Logo
 {

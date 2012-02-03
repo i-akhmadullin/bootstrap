@@ -1,97 +1,110 @@
 .RotatorWrapper
 {
-	width: 100%;
 	min-height: 40px;
-	/*padding-bottom: 65%;*/
-	padding-bottom: 48%;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
+	background: #293135;
 }
 	.RotatorPrevLink,
 	.RotatorNextLink
 	{
 		width: 85px;
-		height: 100%;
+		height: 80%;
 		display: block;
 		position: absolute;
-		top: 0;
+		top: 10%;
 		z-index: 5;
 		text-decoration: none;
-		background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-		background-color: #282828;
-		background-size: 16px 16px;
-	}
-	.RotatorPrevLink:hover,
-	.RotatorNextLink:hover
-	{
-		background-color: #383838;
 	}
 	.RotatorPrevLink
 	{
 		left: 0;
 	}
-	.RotatorPrevLink span
-	{
-		width: 53px;
-		height: 83px;
-		margin: -41px auto 0 auto;
-		display: block;
-		position: relative;
-		top: 50%;
-		background: url(../img/arrow_left.png) no-repeat;
-		cursor: pointer;
-	}
+		.RotatorPrevLink span
+		{
+			width: 65px;
+			height: 96px;
+			margin: -48px auto 0 auto;
+			display: block;
+			position: relative;
+			top: 50%;
+			background: url(../img/arrow_left.png) no-repeat;
+			cursor: pointer;
+		}
+		.RotatorPrevLink:hover span
+		{
+			/* background: url(../img/arrow_left2_hover.png) no-repeat; */
+		}
 	.RotatorNextLink
 	{
 		right: 0;
 	}
-	.RotatorNextLink span
-	{
-		width: 53px;
-		height: 83px;
-		margin: -41px auto 0 auto;
-		display: block;
-		position: relative;
-		top: 50%;
-		background: url(../img/arrow_right.png) no-repeat;
-		cursor: pointer;
-	}
+		.RotatorNextLink span
+		{
+			width: 65px;
+			height: 96px;
+			margin: -48px auto 0 auto;
+			display: block;
+			position: relative;
+			top: 50%;
+			background: url(../img/arrow_right.png) no-repeat;
+			cursor: pointer;
+		}
+		.RotatorNextLink:hover span
+		{
+			/* background: url(../img/arrow_right2_hover.png) no-repeat; */
+		}
 	.Rotator
 	{
 		width: 100%;
 		height: 100%;
 		position: relative;
+		overflow:auto;
+		white-space: nowrap;
+		letter-spacing: -0.3em;
 	}
-		.RotatorItem
+		.RotatorContainer
 		{
-			width: 100%;
-			min-height: 590px;
-			max-height: 720px;
-			float: left;
+			max-width: 32766px;
+			max-height: 500px;
 			position: relative;
-			text-align: center;
+			overflow: hidden;
+			text-align: left;
 		}
-		.RotatorItem a
-		{
-			
-		}
-	.RotatorContainer
+			.RotatorItem
+			{
+				display: inline-block;
+				//zoom:1;
+				max-height: 500px;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+			}
+				.RotatorItem img
+				{
+					max-width: 100%;
+					vertical-align: top;
+				}
+				.RotatorItem .Overlay
+				{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+	.RotatorPaging a
 	{
-		width: 400%;
-		max-width: 32767px;
-		margin-left: 0;
-		position: absolute;
-		left: 0px;
-		overflow: hidden;
+		padding: 0 10px;
+		color: white;
+		font-family: Impact,sans-serif;
+		font-size: 16px;
+		text-decoration: none;
 	}
-
-.PreLoader
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	text-align: center;
-	color: #727272;
-	font-size: 1.6em;
-	background: url('') no-repeat;
-}
+	.RotatorPaging .Active
+	{
+		color: #FF6633;
+		text-decoration: none;
+	}
